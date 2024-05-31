@@ -1,8 +1,8 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
-static const unsigned int gappx     = 5;        /* gaps between windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int gappx     = 6;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -16,7 +16,7 @@ static const char col_cyan[]        = "#005577";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeSel]  = { col_gray4, col_cyan,  "#ff0000"  },
 };
 
 /* tagging */
@@ -28,8 +28,15 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	/* { "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 }, */
+	{ "Gimp",        NULL,       NULL,       0,            1,           -1 },
+	{ "firefox",     NULL,       NULL,       1 << 1,       0,           -1 },
+	{ "thunderbird", NULL,       NULL,       1 << 2,       0,           -1 },
+	{ "Ario",        NULL,       NULL,       1 << 3,       0,           -1 },
+	{ "Nsxiv",       NULL,       NULL,       0,            1,           -1 },
+	{ "mplayer2",    NULL,       NULL,       0,            1,           -1 },
+	{ "mpv",         NULL,       NULL,       0,            1,           -1 },
+	{ "floating",    NULL,       NULL,       0,            1,           -1 },
+	{ "Thunar",      NULL,       NULL,       0,            1,           -1 },
 };
 
 /* layout(s) */
