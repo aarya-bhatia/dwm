@@ -37,6 +37,7 @@ static const Rule rules[] = {
 	{ "Gimp",        NULL,       NULL,       0,            1,           -1 },
 	{ "firefox",     NULL,       NULL,       1 << 1,       0,           -1 },
 	{ "thunderbird", NULL,       NULL,       1 << 2,       0,           -1 },
+	{ "email",       NULL,       NULL,       1 << 2,       0,           -1 },
 	{ "Ario",        NULL,       NULL,       1 << 3,       0,           -1 },
 	{ "Nsxiv",       NULL,       NULL,       0,            1,           -1 },
 	{ "mplayer2",    NULL,       NULL,       0,            1,           -1 },
