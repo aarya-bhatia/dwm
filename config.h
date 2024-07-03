@@ -42,8 +42,8 @@ static const Rule rules[] = {
 	{ "Ario",        NULL,       NULL,       1 << 3,       0,           -1 },
 	{ "Nsxiv",       NULL,       NULL,       0,            1,           -1 },
 	{ "mplayer2",    NULL,       NULL,       0,            1,           -1 },
-	{ "mpv",         NULL,       NULL,       0,            1,           -1 },
 	{ "floating",    NULL,       NULL,       0,            1,           -1 },
+	{ "Gscreenshot", NULL,       NULL,       0,            1,           -1 },
 	{ "Thunar",      NULL,       NULL,       0,            1,           -1 },
 };
 
@@ -74,7 +74,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "alacritty", NULL };
 
 #include "movestack.c"
 static const Key keys[] = {
